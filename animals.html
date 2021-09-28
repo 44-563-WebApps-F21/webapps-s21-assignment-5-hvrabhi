@@ -12,6 +12,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    <style>
+        .animal{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .animals-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Animals by Abhilash Reddy Malipatlola</h1>
@@ -33,6 +46,27 @@
             <div class="col-md">Alligator</div>
         </div>
         <div> The row with animal names break first, because the class col-md is given and it targets only for desktop.</div>
+
+        <div class="container">
+            <div class="animals-section">
+                <img src="images/Monkey.jpg" alt="A Monkey" class="animal " />
+                <img src="images/Ant.jpg" alt="An Ant" class="animal " />
+                <img src="images/Lion.jpg" alt="A Lion" class="animal " />
+            </div>
+        </div>
+
+        <section class="thumbnails mt-4">
+            <div class="container">
+                <div class="animals-section">
+                    <img src="images/Monkey.jpg" alt="A Monkey" class="animal img-thumbnail " />
+                    <img src="images/Ant.jpg" alt="An Ant" class="animal img-thumbnail " />
+                    <img src="images/Lion.jpg" alt="A Lion" class="animal img-thumbnail " />
+                </div>
+            </div>
+        </section>
+
+
+
     </div>
 
 
