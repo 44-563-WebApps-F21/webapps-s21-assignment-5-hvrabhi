@@ -13,6 +13,12 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <style>
+        .highlight {
+            background: #198754;
+            color: rgb(255, 255, 255);
+            padding: 0 12px;
+            font-weight: 600;
+        }
         .animal{
             width: 400px;
             height: 400px;
@@ -23,10 +29,45 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
+        .thumbnails .animal {
+            width: 100px;
+            height: 100px;
+        }
+        .thumbnails .animals-section {
+            justify-content: center;
+        }
+        table {
+            border: .05rem solid #ccc;
+        }
+        thead tr {
+            background-color: #fafafa;
+        }
+        tr:hover {
+            cursor: pointer;
+            border: 0.1rem solid #565656;
+        }
     </style>
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Interesting Animals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="plane.html">Plane</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="train.html">Train</a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <h1>Animals by Abhilash Reddy Malipatlola</h1>
     <div class="container">
         <div class="row">
