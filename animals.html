@@ -46,6 +46,20 @@
             cursor: pointer;
             border: 0.1rem solid #565656;
         }
+        .card-img {
+            max-width: 50%;
+            height: 120px;
+            object-fit: cover;
+        }
+        .card:not(:last-child) {
+            margin-right: 5px;
+        }
+        .bonus span {
+            background-image: linear-gradient( to right top, #11213a, #006c7a, #008793, #bf3c00, #1228eb );
+            color: #fff;
+            font-family: "Courier New", Courier, monospace;
+            
+        }
     </style>
 
 </head>
@@ -210,11 +224,37 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </section>
-
-
+        <section class="mt-4">
+            <h2 class="bonus text-center"><span>Bonus</span></h2>
+            <div class="animal-cards">
+                <div class="card" style="flex: 33%">
+                    <img src="images/Monkey.jpg" class="card-img-top card-img "  alt="A Monkey">
+                    <div class="card-body">
+                      <h5 class="card-title">Monkey</h5>
+                      <p class="card-text">Monkeys are generally considered to be intelligent, especially the Old World monkeys.</p>
+                      <a href="https://en.wikipedia.org/wiki/Monkeyr" class="btn btn-primary">wikipedia</a>
+                    </div>
+                  </div>
+                  <div class="card" style="flex: 33%">
+                    <img src="images/Ant.jpg" class="card-img-top card-img "  alt="An Ant">
+                    <div class="card-body">
+                      <h5 class="card-title">Ant</h5>
+                      <p class="card-text">Ants are found on all continents except Antarctica, and only a few large islands, such as Greenland, Iceland, parts of Polynesia and the Hawaiian Islands lack native ant species.</p>
+                      <a href="https://en.wikipedia.org/wiki/Ant" class="btn btn-primary">wikipedia</a>
+                    </div>
+                  </div>
+                  <div class="card" style="flex: 33%">
+                    <img src="images/Lion.jpg" class="card-img-top card-img "  alt="A Lion">
+                    <div class="card-body">
+                      <h5 class="card-title">Lion</h5>
+                      <p class="card-text">Lions are one of the most widely recognised animal symbols in human culture, the lion has been extensively depicted in sculptures and paintings, on national flags, and in contemporary films and literature.</p>
+                      <a href="https://en.wikipedia.org/wiki/Lion" class="btn btn-primary">wikipedia</a>
+                    </div>
+                  </div>
+            </div>
+        </section>
 
     </div>
-
 
 </body>
 </html>
